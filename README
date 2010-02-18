@@ -4,8 +4,18 @@ input to standard output.
 Accepts an optional element name to match on the command line, 
 ignoring namespaces.
 
+=======================================================
+Examples:
+
 tail -f server.log | ruby pp_xml.rb
 
 or 
 
 tail -f server.log | ruby pp_xml.rb Soap
+=======================================================
+Improvements:
+
+1. accept an optional file name -f=myfile.log
+2. accept a regular expression for element name to match
+3. match a multi-line xml file
+4. split xml output from search/cmd line
