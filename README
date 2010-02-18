@@ -1,0 +1,11 @@
+This is a ruby program to output single-lined XML found in standard 
+input to standard output.
+
+Accepts an optional element name to match on the command line, 
+ignoring namespaces.
+
+tail -f server.log | ruby pp_xml.rb
+
+or 
+
+tail -f server.log | ruby pp_xml.rb Soap
